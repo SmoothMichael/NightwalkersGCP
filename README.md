@@ -14,14 +14,14 @@ Step 2: Configure GClOUD CLI & Authorize Image / Helm Repositories
         us-east1-docker.pkg.dev`
 
 
-Step 3: Create Project
+Step 3: Create Project (Replace your-project-id)
 
     `export PROJECT_ID=<your-project-id>`
 
     `gcloud projects create $PROJECT_ID --name=$PROJECT_ID --set-as-default`
 
 
-Step 4: Create Subnet and Cluster in Project VPC
+Step 4: Create Subnet and Cluster in Project VPC (Replace Cluster Name)
 
     `gcloud container clusters create CLUSTER_NAME \
             --region=us-east1 \
@@ -31,7 +31,7 @@ Step 4: Create Subnet and Cluster in Project VPC
     `kubectl cluster-info`
 
 
-Step 5: Push Images to Artifact Repository
+Step 5: Push Images to Artifact Repository (Replace .../your-image-name)
 
 (IMAGE NAME FORMAT: us-east--docker.pkg.dev/aline-jenkins-gcp/nightwalkers-images/your-image-name)
 
